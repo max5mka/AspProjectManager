@@ -1,7 +1,13 @@
+using AspProjectManager.Domain;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionString = builder.Configuration.GetConnectionString("Default");
+builder.Services.AddDbContext<ProjectManagerContext>(opt => opt.UseNpgsql(connectionString));
 
 var app = builder.Build();
 

@@ -4,14 +4,14 @@
     "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj": {}
   },
   "projects": {
-    "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj": {
+    "D:\\myRep\\AspProjectManager\\AspProjectManager.Domain\\AspProjectManager.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj",
-        "projectName": "AspProjectManager",
-        "projectPath": "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj",
+        "projectUniqueName": "D:\\myRep\\AspProjectManager\\AspProjectManager.Domain\\AspProjectManager.Domain.csproj",
+        "projectName": "AspProjectManager.Domain",
+        "projectPath": "D:\\myRep\\AspProjectManager\\AspProjectManager.Domain\\AspProjectManager.Domain.csproj",
         "packagesPath": "C:\\Users\\maksb\\.nuget\\packages\\",
-        "outputPath": "D:\\myRep\\AspProjectManager\\AspProjectManager\\obj\\",
+        "outputPath": "D:\\myRep\\AspProjectManager\\AspProjectManager.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +50,97 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj",
+        "projectName": "AspProjectManager",
+        "projectPath": "D:\\myRep\\AspProjectManager\\AspProjectManager\\AspProjectManager.csproj",
+        "packagesPath": "C:\\Users\\maksb\\.nuget\\packages\\",
+        "outputPath": "D:\\myRep\\AspProjectManager\\AspProjectManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\maksb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\myRep\\AspProjectManager\\AspProjectManager.Domain\\AspProjectManager.Domain.csproj": {
+                "projectPath": "D:\\myRep\\AspProjectManager\\AspProjectManager.Domain\\AspProjectManager.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.22.1, )"
